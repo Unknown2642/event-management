@@ -1,0 +1,38 @@
+QUICK START GUIDE
+================
+
+Windows Users (Easiest):
+1. Extract all files
+2. Double-click 'run.bat'
+3. Open browser: http://localhost:5005
+
+Manual Setup:
+1. Extract files to folder
+2. Open command prompt in folder
+3. Run: pip install -r requirements.txt
+4. Run: python app.py
+5. Open browser: http://localhost:5005
+
+Default Login Accounts:
+- Admin: admin@example.com / admin123
+- Organizer: organizer@example.com / organizer123  
+- User: user@example.com / user123
+
+Features to Test:
+- Multi-role authentication
+- Event creation and booking
+- Dynamic pricing (events within 7 days get +50%)
+- Coupon system (SAVE10, SAVE20, EARLY50)
+- Admin user/event management
+- Rate limiting (5 requests/minute)
+- Security vulnerabilities (XSS, CSRF, etc.)
+
+For detailed setup: Read PROJECT_SETUP.md
+For features info: Read FEATURES.md
+For testing: Read TEAM_CHECKLIST.md
+
+Troubleshooting:
+- Port 5005 busy? Kill process or change port in app.py
+- Permission denied? Close Excel if .xlsx files are open
+- Module errors? Run: pip install -r requirements.txt --force-reinstall
+- Reset data? Run: python reset_to_defaults.py
